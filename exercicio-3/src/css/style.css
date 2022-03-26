@@ -1,0 +1,91 @@
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 900px;
+    height: 415px;
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid: "secao-principal aside";
+    margin-top: 33px;
+}
+
+/* SECTION */
+
+.secao-principal {
+    grid-area: secao-principal;
+}
+
+.video-principal img {
+    width: 543px;
+    height: 217px;
+}
+
+.video-principal h1 {
+    font-size: 1.8rem;
+    margin-top: 12px;
+    font-weight: 700;
+}
+
+.video-principal p {
+    font-size: 1.4rem;
+    margin-top: 9px;
+    font-weight: 300;
+}
+
+.texto-video {
+    width: 538px;
+    height: 26px;
+    font-size: 1.6rem;
+}
+
+/* ASIDE */
+
+.aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column; 
+    margin-left: -50px;   
+}
+
+.propaganda {
+    position: relative;
+    width: 270px;
+    height: 56px;
+}
+
+.texto-propaganda {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.video-lateral {
+    display: flex;
+    margin-top: 20px;
+}
+
+.descricao-lateral {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.descricao-lateral h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.descricao-lateral p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    font-weight: 300;
+}
