@@ -1,0 +1,168 @@
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #283448;
+    font-size: 1.4rem;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    display: grid;
+    grid-template-areas: "header"
+                         "hero" 
+                         "features" 
+                         "team"
+                         "sign" 
+                         "footer";
+}               
+
+/* Header */ 
+
+.header {
+    display: grid;
+    grid-area: header;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+}
+
+.header-container nav ul {
+    display: flex;
+}
+
+.header-container nav ul li {
+    margin-right: 5rem;
+
+}
+
+.header-container nav ul li a {
+    transition: 0.3s;
+    color: #dcdcdc;
+}
+
+.header-container nav ul li a:hover{
+    color: hsl(0, 0%, 100%);
+    text-decoration: underline;
+}
+
+/* Hero */ 
+
+.hero {
+    display: grid;
+    grid-area: hero;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-container img {
+    width: 72rem;
+    height: 53.4rem;
+}
+.hero-container p {
+    width: 72rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.hero-container a {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: hsl(176, 68%, 64%);
+}
+
+/* Features */
+
+.features {
+    display: grid;
+    grid-area: features;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+}
+
+.features-items {
+    width: 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 5rem 2rem 10rem;
+    text-align: center;
+}
+
+.features-items h3 {
+    margin-top: 2rem;
+}
+
+.features-items p {
+    margin-top: 1rem;
+}
+
+/* Team */
+
+.team {
+    display: grid;
+    grid-area: team;
+}
+
+.team-hero {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.team-hero-text {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    margin-left: 5rem;
+}
+
+.team-hero-text h2 {
+    font-size: 3rem;
+}
+
+.team-hero-text p {
+    margin-top: 1rem;
+}
+
+.team-hero-text a {
+    margin-top: 1rem;
+    color: rgb(94, 206, 204);
+    text-decoration: underline;
+}
+
+.team-hero img {
+    width: 61.5rem;
+    height: 46.5rem;
+}
+
+/* Sign Up */
+
+.sign-up{
+    display: grid;
+    grid-area: sign;
+}
+
+/* Footer */
+
+.footer {
+    display: grid;
+    grid-area: footer;
+}
+
+.footer-container svg{
+    width: 3.5rem;
+}
