@@ -1,0 +1,10 @@
+:root {
+    --background-intro: hsl(217, 28%, 15%);
+    --background-main: hsl(218, 28%, 13%);
+    --background-footer:  hsl(216, 53%, 9%);
+    --background-comments: hsl(219, 30%, 18%);
+    --color-button: hsl(198, 60%, 50%);
+    --color-button-active: hsl(176, 68%, 64%);
+    --color-font-menu: #dcdcdc;
+    --color-font-global: hsl(0, 0%, 100%);
+}
