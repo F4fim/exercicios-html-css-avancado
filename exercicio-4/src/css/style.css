@@ -1,4 +1,4 @@
-html{
+html {
     font-size: 62.5%;
 }
 
@@ -10,19 +10,18 @@ body {
     font-weight: 400;
     display: grid;
     grid-template-areas: "header"
-                         "hero" 
-                         "features" 
-                         "team"
-                         "sign" 
-                         "footer";
-}               
+        "hero"
+        "features"
+        "team"
+        "footer";
+}
 
-/* Header */ 
+/* Header */
 
 .header {
     display: grid;
     grid-area: header;
-    font-family: 'Raleway' , sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .header-container {
@@ -45,30 +44,29 @@ body {
     color: var(--color-font-menu);
 }
 
-.header-container nav ul li a:hover{
+.header-container nav ul li a:hover {
     color: var(--color-font-global);
     text-decoration: underline;
 }
 
-/* Hero */ 
+/* Hero */
 
 .hero {
     display: grid;
     grid-area: hero;
-    z-index: 1;
 }
 
 .hero-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    background: url("../img/bg-curvy-desktop.svg") no-repeat;
+    background-position: bottom;
 }
 
 .hero-container img {
     width: 72rem;
     height: 53.4rem;
-    z-index: 1;
 }
 
 .hero-container h2 {
@@ -76,7 +74,6 @@ body {
     width: 72rem;
     text-align: center;
     margin-top: 4rem;
-    z-index: 1;
 }
 
 .hero-container p {
@@ -84,7 +81,6 @@ body {
     text-align: center;
     font-size: 1.6rem;
     margin-top: 1rem;
-    z-index: 1;
 }
 
 .hero-container a {
@@ -96,18 +92,8 @@ body {
     z-index: 1;
 }
 
-.hero-container a:hover{
+.hero-container a:hover {
     background-color: var(--color-button-active);
-}
-
-.hero-container-background {
-    position: absolute;
-    bottom: 0;
-}
-
-.hero-container-background svg {
-    width: 100%;
-    
 }
 
 /* Features */
@@ -174,14 +160,25 @@ body {
     margin-top: 1rem;
 }
 
-.team-hero-text a {
-    margin-top: 1rem;
+.team-hero-text span {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.team-hero-text span img {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-left: 1rem;
+}
+
+.team-hero-text span a {
     color: var(--color-button-active);
     text-decoration: underline;
     transition: 0.3s;
 }
 
-.team-hero-text a:hover{
+.team-hero-text span a:hover {
     color: var(--color-font-global);
 }
 
@@ -230,19 +227,18 @@ body {
 
 /* Sign Up */
 
-.sign-up{
-    display: grid;
-    grid-area: sign;
+.sign-up {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     background-color: var(--background-main);
     position: relative;
+    width: 65%;
 }
 
 .sign-container {
-    width: 72rem;
+    width: 100%;
     background-color: var(--background-intro);
     padding: 4rem;
     position: absolute;
@@ -251,11 +247,17 @@ body {
     transform: translate(-50%, -50%);
     box-shadow: 2px 5px 10px #000;
     z-index: 1;
+    text-align: center;
 }
 
 .sign-container h3 {
     font-size: 3rem;
     margin-bottom: 2rem;
+}
+
+.sign-container p {
+    width: 62rem;
+    margin: 0 auto;
 }
 
 /* Footer */
@@ -264,33 +266,31 @@ body {
     display: grid;
     grid-area: footer;
     background-color: var(--background-footer);
+    position: relative;
 }
 
+.footer-logo {
+    position: absolute;
+    top: 15rem;
+    left: 7rem;
+}
+
+.footer-logo img {
+    width: 10rem;
+}
 
 .footer-container {
     display: flex;
-    margin: 15rem 0 3rem 0;
+    margin: 20rem 0 3rem 0;
     justify-content: space-around;
-    align-items: flex-start;
 }
 
-.footer-container-items {
-    display: flex;
-    margin: 1rem 3rem;
-    width: 30rem;
+.footer-container img {
+    width: 1.8rem;
+    height: 1.9rem;
 }
 
-.footer-container-items-contact {
-    display: flex;
-    flex-direction: column;
-    width: 27rem;
-}
-
-.footer-container-items p {
-    margin-left: 3rem;
-}
-
-.footer-container  nav ul {
+.footer-container nav ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -311,8 +311,36 @@ body {
     color: var(--color-font-global);
 }
 
-.footer-container-social {
-
+.footer-container-items-contact {
+    display: flex;
+    flex-direction: column;
+    width: 27rem;
 }
 
+.footer-container-items {
+    display: flex;
+    margin: 1rem 3rem;
+    width: 30rem;
+}
 
+.footer-container-items p {
+    margin-left: 2rem;
+ }
+ 
+ .footer-container-social {
+     margin-right: 3rem;
+ }
+
+.footer-container-social i {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.footer-container-social a {
+    margin-left: 1rem;
+    transition: 0.3s;
+}
+
+.footer-container-social a:hover {
+    color: var(--color-button-active);
+}
