@@ -7,4 +7,6 @@
     --color-button-active: hsl(176, 68%, 64%);
     --color-font-menu: #dcdcdc;
     --color-font-global: hsl(0, 0%, 100%);
+    --max-width-desktop: 1440px;
+    --max-width-mobile: 375px;
 }
