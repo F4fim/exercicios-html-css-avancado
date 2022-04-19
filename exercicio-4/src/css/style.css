@@ -53,13 +53,12 @@ body {
 @media(max-width: 375px) {
     .header {
         background-color: var(--background-intro);
-        max-width: var(--max-width-mobile);
     }
 
     .header-container img {
         width: 7rem;
     }
-
+    
     .header-container nav ul li {
         margin-right: 2rem;
     }
@@ -116,18 +115,10 @@ body {
 }
 
 @media(max-width: 375px) {
-    .hero {
-        max-width: var(--max-width-mobile);
-    }
-
     .hero-container {
         background: url("../img/bg-curvy-mobile.svg") no-repeat;
         background-position: center;
         margin-bottom: 5rem;
-    }
-
-    .hero-container img {
-        width: 30rem;
     }
 
     .hero-container h2 {
@@ -206,14 +197,18 @@ body {
 
 .team-hero {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    margin: 10rem auto 0rem auto;
+    width: 100%;
 }
 
 .team-hero-text {
     display: flex;
     flex-direction: column;
-    width: 40rem;
+    flex-wrap: wrap;
+    width: 31rem;
     margin-left: 5rem;
 }
 
@@ -227,6 +222,7 @@ body {
 
 .team-hero-text span {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 2rem;
 }
@@ -247,13 +243,9 @@ body {
     color: var(--color-font-global);
 }
 
-.team-hero img {
-    width: 61.5rem;
-    height: 46.5rem;
-}
-
 .team-comments {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
@@ -288,6 +280,29 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
+}
+
+@media(max-width: 375px) {
+    .team-hero {
+        flex-direction: column;
+    }
+
+    .team-hero img {
+        width: 90%;
+    }
+
+    .team-hero-text {
+        margin: 3rem;
+    }
+
+    .team-hero-text h2 {
+        font-size: 1.6rem;
+        margin: 1rem auto;
+    }
+
+    .team-hero-text p {
+        margin: 1rem auto;
+    }
 }
 
 /* Sign Up */
