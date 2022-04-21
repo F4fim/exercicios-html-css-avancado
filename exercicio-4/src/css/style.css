@@ -4,7 +4,6 @@ html {
 
 body {
     background-color: var(--background-intro);
-    max-width: var(--max-width-desktop);
     font-size: 1.4rem;
     color: var(--color-font-global);
     font-family: 'Open Sans', sans-serif;
@@ -50,7 +49,7 @@ body {
     text-decoration: underline;
 }
 
-@media(max-width: 375px) {
+@media(max-width: 425px) {
     .header {
         background-color: var(--background-intro);
     }
@@ -88,22 +87,22 @@ body {
 
 .hero-container h2 {
     font-size: 4rem;
-    width: 72rem;
+    width: 70%;
     text-align: center;
     margin-top: 4rem;
     flex-wrap: wrap;
 }
 
 .hero-container p {
-    width: 50rem;
+    width: 46%;
     text-align: center;
     font-size: 1.6rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 .hero-container a {
     margin-top: 2rem;
-    padding: 1rem 5rem;
+    padding: 1rem 7rem;
     border-radius: 2rem;
     background-color: var(--color-button);
     transition: 0.3s;
@@ -114,7 +113,7 @@ body {
     background-color: var(--color-button-active);
 }
 
-@media(max-width: 375px) {
+@media(max-width: 425px) {
     .hero-container {
         background: url("../img/bg-curvy-mobile.svg") no-repeat;
         background-position: center;
@@ -122,12 +121,10 @@ body {
     }
 
     .hero-container h2 {
-        width: 29rem;
         font-size: 2rem;
     }
 
     .hero-container p {
-        width: 30rem;
         font-size: 1.4rem;
         margin-top: 2rem;
     }
@@ -148,19 +145,22 @@ body {
 }
 
 .features-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     margin: 0 auto;
     max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10rem;
 }
 
 .features-items {
-    width: 32rem;
+    width: 35%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10rem 5rem 2rem 10rem;
+    margin: 5rem 5rem 5rem 5rem;
     text-align: center;
 }
 
@@ -172,15 +172,10 @@ body {
     margin-top: 1rem;
 }
 
-@media(max-width: 375px) {
+@media(max-width: 425px) {
     .features-container {
-        grid-template-columns:  1fr;
-        grid-template-rows: repeat(4, 1fr);
-    }
-
-    .features-items {
-        width: 30rem;
-        margin: 5rem auto;
+       flex-direction: column;
+       align-items: center;
     }
 }
 
@@ -199,32 +194,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     margin: 10rem auto 0rem auto;
-    width: 100%;
 }
 
 .team-hero-text {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 31rem;
+    align-items: center;
+    justify-content: center;
     margin-left: 5rem;
 }
 
 .team-hero-text h2 {
     font-size: 3rem;
+    font-family: 'Raleway' , sans-serif;
+    margin-left: 5rem;
 }
 
 .team-hero-text p {
+    width: 80%;
     margin-top: 1rem;
+    margin-left: 5rem;
 }
 
 .team-hero-text span {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     margin-top: 2rem;
+    margin-left: 5rem;
 }
 
 .team-hero-text span img {
@@ -245,35 +241,37 @@ body {
 
 .team-comments {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 13rem 0 30rem 0;
+    position: relative;
 }
 
-.team-comments:before {
+.team-comments-people.quotes:before {
     content: url("../img/bg-quotes.png");
     position: absolute;
-    bottom: 37rem;
-    left: 10rem;
+    top: -1rem;
+    left: 0.8rem;  
 }
 
 .team-comments-people {
-    width: 35rem;
+    width: 40rem;
     background-color: var(--background-comments);
-    margin: 15rem 2rem 20rem 2rem;
+    margin: 2rem 2rem 0em 2rem;
     padding: 3rem;
-    z-index: 1;
+    
 }
 
 .team-comments-people img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
 }
 
 .team-people-profile {
     display: flex;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .team-profile-office {
@@ -282,26 +280,26 @@ body {
     margin-left: 1rem;
 }
 
-@media(max-width: 375px) {
-    .team-hero {
+@media(max-width: 880px) {
+    .team-hero-text {
         flex-direction: column;
     }
 
-    .team-hero img {
-        width: 90%;
-    }
-
-    .team-hero-text {
-        margin: 3rem;
-    }
-
     .team-hero-text h2 {
-        font-size: 1.6rem;
-        margin: 1rem auto;
+       font-size: 2.5rem;
+       margin-left: 3rem;
     }
 
     .team-hero-text p {
-        margin: 1rem auto;
+        margin-left: 2rem;
+    }
+
+    .team-hero-text span  {
+        margin-left: 2rem;
+    }
+
+    .team-comments {
+        flex-direction: column;
     }
 }
 
@@ -326,8 +324,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 2px 5px 10px #000;
-    z-index: 1;
+    margin-top: 25rem;
     text-align: center;
+    z-index: 1;
 }
 
 .sign-container h3 {
@@ -336,8 +335,56 @@ body {
 }
 
 .sign-container p {
-    width: 62rem;
+    width: 70%;
     margin: 0 auto;
+}
+
+.sign-container .send-email {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-container .send-email input {
+    width: 55%;
+    padding: 2rem;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.sign-container .send-email a button {
+    padding: 2rem;
+    margin-left: 2rem;
+    border-radius: 30px;
+    color: var(--color-font-global);
+    background-color: var(--color-button);
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.sign-container .send-email a button:hover {
+    background-color: var(--color-button-active);
+    cursor: pointer;
+}
+
+@media(max-width: 768px){
+    .sign-container h3 {
+        font-size: 2rem;
+    }
+    .sign-container .send-email{
+        flex-direction: column;
+    }
+
+    .sign-container .send-email input {
+        width: 30rem;
+    }
+
+    .sign-container .send-email a button {
+        width: 30rem;
+        margin: 2rem auto;
+    }
 }
 
 /* Footer */
@@ -351,12 +398,8 @@ body {
 
 .footer-logo {
     position: absolute;
-    top: 15rem;
+    top: 13rem;
     left: 7rem;
-}
-
-.footer-logo img {
-    width: 10rem;
 }
 
 .footer-container {
