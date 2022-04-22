@@ -259,7 +259,6 @@ body {
     background-color: var(--background-comments);
     margin: 2rem 2rem 0em 2rem;
     padding: 3rem;
-    
 }
 
 .team-comments-people img {
@@ -335,7 +334,6 @@ body {
 }
 
 .sign-container p {
-    width: 70%;
     margin: 0 auto;
 }
 
@@ -396,17 +394,12 @@ body {
     position: relative;
 }
 
-.footer-logo {
-    position: absolute;
-    top: 13rem;
-    left: 7rem;
-}
-
 .footer-container {
     display: flex;
-    margin: 20rem 0 3rem 0;
+    margin: 20rem 0 5rem 0;
     justify-content: space-around;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .footer-container img {
@@ -417,9 +410,6 @@ body {
 .footer-container nav ul {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 18rem;
-    margin-right: 10rem;
 }
 
 .footer-container nav ul li {
@@ -435,10 +425,10 @@ body {
     color: var(--color-font-global);
 }
 
-.footer-container-items-contact {
-    display: flex;
-    flex-direction: column;
-    width: 27rem;
+.footer-container-items.location:before {
+    content: url('../img/logo.svg');
+    position: absolute;
+    top: -8rem;
 }
 
 .footer-container-items {
@@ -449,8 +439,14 @@ body {
 
 .footer-container-items p {
     margin-left: 2rem;
- }
- 
+}
+
+.footer-container-items-contact {
+    display: flex;
+    flex-direction: column;
+    width: 27rem;
+}
+
  .footer-container-social {
      margin-right: 3rem;
  }
@@ -467,4 +463,24 @@ body {
 
 .footer-container-social a:hover {
     color: var(--color-button-active);
+}
+
+@media(max-width: 885px) {
+    .footer-container {
+        flex-direction: column;
+        margin-top: 30rem;
+    }
+
+    .footer-container-items-contact {
+        margin-bottom: 3rem;
+    }
+
+    .footer-container-social {
+        margin: 0 auto;
+    }
+
+    .footer-container nav ul {
+        margin-top: 3rem;
+    }
+
 }
