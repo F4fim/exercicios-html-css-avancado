@@ -244,31 +244,26 @@ body {
 .team-comments {
     display: flex;
     align-items: center;
-    
-    margin: 13rem 0 30rem 0;
+    flex-wrap: wrap;
+    margin: 13rem auto 30rem auto;
     position: relative;
 }
 
 .team-comments .quotes{
     position: absolute;
-}
-
-/* .team-comments-people.quotes:before {
-    content: url("../img/bg-quotes.png");
-    position: absolute;
     top: -1rem;
-    left: 0.8rem;  
-} */
+    left: -0.4rem;
+}
 
 .team-comments-people {
     width: 40rem;
+    flex-wrap: wrap;
     background-color: var(--background-comments);
-    margin: 2rem 2rem 0em 2rem;
+    margin: 2rem 1rem 0em 1rem;
     padding: 3rem;
-    z-index: 2;
 }
 
-.team-comments-people img {
+.team-people-profile img {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
@@ -318,7 +313,7 @@ body {
     align-items: center;
     background-color: var(--background-main);
     position: relative;
-    width: 65%;
+    width: 70%;
 }
 
 .sign-container {
@@ -374,7 +369,11 @@ body {
     cursor: pointer;
 }
 
-@media(max-width: 768px){
+@media(max-width: 880px){
+    .sign-container {
+        width: 40rem;
+    }
+
     .sign-container h3 {
         font-size: 2rem;
     }
