@@ -1,0 +1,13 @@
+@media(max-width: 500px){
+    .divider.desktop{
+        display: none;
+    }
+
+    .divider.mobile {
+        display: block;
+    }
+
+    .app-container {
+        width: 350px;
+    }
+}
