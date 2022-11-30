@@ -1,11 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: hsl(185, 75%, 39%);
+    background-color: var(--background-color);
     font-family: 'Kumbh Sans', sans-serif;
 }
 
@@ -39,7 +33,7 @@ body {
 }
 
 .cartao-container p {
-    color: hsl(227, 10%, 46%);
+    color: var(--text-color);
 }
 
 .destaque {
@@ -47,7 +41,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-top: 1px solid hsl(227, 10%, 46%);
+    border-top: 1px solid var(--text-color);
     padding: 20px 0 0 0px;
 }
 
@@ -63,5 +57,5 @@ body {
 }
 
 .informacoes p {
-    color: hsl(227, 10%, 46%);
+    color: var(--text-color);
 }
