@@ -1,5 +1,5 @@
-@media(max-width: 500px){
-    .divider.desktop{
+@media(max-width: 500px) {
+    .divider.desktop {
         display: none;
     }
 
